@@ -19,6 +19,17 @@ int main() {
     // endl == end line == \n
     // cout == c output
     cout << endl;
+    /*--------------Reference------------------------*/
+    int var=0;
+    // reference rvar
+    int& rvar = var;
+    var = 123;
+    cout << "var : " << var << '\n';
+    cout << "rvar : " << rvar << '\n';
+    rvar = 456;
+    cout << "var : " << var << '\n';
+    cout << "rvar : " << rvar << '\n';
+ 
 
     return 0;
 }
