@@ -1,3 +1,3 @@
 # C++ learning
 
-'system("pause")' = 視窗暫停
+`system("pause")` = 視窗暫停
