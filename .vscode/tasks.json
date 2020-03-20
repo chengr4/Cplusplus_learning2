@@ -1,5 +1,4 @@
 {
-  // args array 指定將傳遞給clang ++的命令行參數。 必須按照 compiler 期望的順序指定這些參數。
   "version": "2.0.0",
   "tasks": [
     {
@@ -15,7 +14,7 @@
         "${fileDirname}/${fileBasenameNoExtension}"
       ],
       "options": {
-        "cwd": "${workspaceFolder}/"
+        "cwd": "${workspaceFolder}"
       },
       "problemMatcher": [
         "$gcc"
