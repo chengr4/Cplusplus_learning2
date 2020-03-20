@@ -1,3 +1,3 @@
-# C++ based module
+# C++ learning
 
-C++ VScode 用基本模組
+'system("pause")' = 視窗暫停
