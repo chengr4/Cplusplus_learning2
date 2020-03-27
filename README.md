@@ -1,13 +1,12 @@
-# C++ learning
+# C++ learning2
 
-`system("pause")` == 視窗暫停  
-`std::cout << “Ohne using-Deklaration”;`  
-`::` == Scope-Operator  
+## content
+1. class
+2. constructor
 
 ## special
 1. Pointer auf vector-Objekt vs. vector-Objekt
 
 ## Questions
-
-無法同時有兩個 `cin`??  
-`using namespace std::cout;` ????  
+1. this kann wie in Java verwendet werden: (how?)
+ 
