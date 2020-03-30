@@ -5,6 +5,7 @@
 using namespace std; 
 
 int main(void) {
+  // Objekte können direkt oder mit 'new' dynamisch angelegt werden. 
   // 不用加括號
   ATM *device_ptr = new ATM;
   vector <ATM> vdevice(2);
@@ -30,6 +31,33 @@ int main(void) {
 
   cout << device.get_money() << endl;
   cout << device.get_location() << endl;
+/*---------------------Klassenattribute---------------------------*/
+  ATM device01(100000, "Bonn, Marktplatz 1");
+  device01.geld_abheben(500);
+  device01.geld_abheben(250);
+  device01.geld_abheben(1000);
+  ATM device02(200000, "New York, Wall Street");
+  device02.geld_abheben(990);
+  device02.geld_abheben(250); 
+
+  //Welche Werte für die Anzahl der Zugriffe würden
+  //hier ausgegeben werden? (結果相同)
+  cout << device01.get_zugriffe() << endl;
+  cout << device02.get_zugriffe() << endl; 
+
+  /*---- Klassen-Objekte als Rückgabewert von Funktionen ------------*/
+  ATM device_compare1(500000, "Klagenfurt");
+  ATM device_conpare2(300000, "Dresden");
+  // Aufruf der Hilfsfunktion
+  ATM device_result = diffMoney(device_compare1, device_conpare2);
+
+  // Auch so kann die Hilfsfunktion verwendet werden
+  cout << "Am meisten Geld ist in "
+  << device_result.get_location()
+  << endl; 
+
+  /*---- Operatoren überladen ------------*/
+
   return 0;
 
 }
