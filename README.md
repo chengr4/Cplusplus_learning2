@@ -3,6 +3,9 @@
 ## content
 1. class
 2. constructor
+3. destructor
+    - Free up dynamically reserved space
+    - Close files
 
 ## special
 1. Pointer auf vector-Objekt vs. vector-Objekt
