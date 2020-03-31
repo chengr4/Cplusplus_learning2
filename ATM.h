@@ -39,7 +39,11 @@ class ATM {
   // friend
   friend void print_location(ATM&);
   friend class Operator;
+  // I/O-Operatoren überladen
+  friend istream& operator >>(istream&, ATM&);
+  friend ostream& operator <<(ostream&, const ATM&);
 
+  // oprator overloading
   unsigned long operator+(const ATM& a1);
   unsigned long operator+(unsigned long g);
   unsigned long operator+=(const ATM& a1);

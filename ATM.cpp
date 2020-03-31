@@ -100,3 +100,18 @@ unsigned long ATM::operator+=(unsigned long g) {
 unsigned long ATM::operator+=(const ATM& a1) {
   return (money += a1.money);
 } 
+
+// I/O-Operatoren überladen
+istream& operator >>(istream& is, ATM& a) {
+  cout << "Geld : "; is >> a.money;
+  cout << "Standort : "; is >> a.location;
+  return is;
+}
+
+ostream& operator <<(ostream& os, const ATM& a) {
+  cout << "Geld : " << a.get_money() << endl;
+  cout << "Standort : " << a.get_location() << endl;
+  // class attribute
+  cout << "Zugriffe : " << a.get_zugriffe() << endl;
+ return os;
+} 
